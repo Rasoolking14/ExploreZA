@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="This is an example of meta">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+<style>
+
+</style>
+</head>
+
+<body class = "login-body">
+<div class="bg-container">
+  <img class="bg-img" src="cape-argus.jpg" alt="Image cannot be displayed">
+
+
+
+  <div class="container">
+
+
+
+    <h1>LOG IN</h1>
+
+
+    <form id="login-form" action="" method="post">
+        <div class="tbox">
+            <input id="uname" type="text" name="" placeholder="Username" value="">
+        </div>
+
+        <div class="tbox">
+            <input id="pwd" type="password" name="" placeholder="Password" value="">
+        </div>
+
+        <input class="btn" type="submit" name="" value="LOG IN" onclick="validateLogin()">
+
+    </form>
+
+    <a class="b1" href="#">FORGOT PASSWORD?</a>
+    <a class="b2" href="#">CREATE AN ACCOUNT</a>
+  </div>
+
+  <div class="modal">
+    <div class="modal-header">
+      <img src="alert_icon.png" alt="">
+    </div>
+    <p>Incorrect username or password</p>
+    <button class="btn" type="button" name="button" onclick="dismissModal()">TRY AGAIN</button>
+  </div>
+
+</div>
+
+</body>
+<script>
+  function validateLogin() {
+    event.preventDefault(); // Prevent form submission
+
+    var username = document.getElementById("uname").value;
+    var password = document.getElementById("pwd").value;
+
+    // Check if the username and password are correct
+    if (username === "ExploreZA" && password === "exploreza123") {
+      // Redirect to the home page or perform any other action
+      window.location.href = "index.html";
+    } else {
+      // Show the modal for incorrect login
+      document.querySelector(".modal").style.display = "block";
+    }
+  }
+
+  document.documentElement.setAttribute('data-theme', 'dark');
+
+  function dismissModal() {
+    document.querySelector(".modal").style.display = "none";
+  }
+
+</script>
+</html>
