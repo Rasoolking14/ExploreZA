@@ -1,76 +1,213 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign In / Register — ExploreZA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style-2.css" />
+    <script>
+      try {
+        var t = localStorage.getItem("exploreza-theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="login-body">
+    <header class="nav" id="topnav">
+      <div class="nav__inner container">
+        <a href="index.html" class="brand" aria-label="ExploreZA home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path d="M15 9l-2.2 4.8L8 16l2.2-4.8L15 9z" fill="currentColor" />
+              <circle cx="12" cy="12" r="1.1" fill="var(--bg)" />
+            </svg>
+          </span>
+          <span class="brand__word"
+            >Explore<span class="brand__za">ZA</span></span
+          >
+        </a>
+      </div>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="This is an example of meta">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
+    <div class="auth-wrapper">
+      <!-- UI Sliding Toggle Track Matching Screenshot -->
+      <div class="auth-toggle">
+        <button
+          id="tab-signin"
+          class="active"
+          onclick="switchAuthTab('signin')"
+        >
+          Sign In
+        </button>
+        <button id="tab-signup" onclick="switchAuthTab('signup')">
+          Create Account
+        </button>
+      </div>
 
-<body class = "login-body">
-<div class="bg-container">
-  <img class="bg-img" src="cape-argus.jpg" alt="Image cannot be displayed">
+      <!-- Sign In Segment View -->
+      <div id="form-signin-container">
+        <h1>Welcome back</h1>
+        <p class="auth-subtitle">Sign in to your ExploreZA account</p>
 
+        <form
+          id="login-form"
+          action=""
+          method="post"
+          onsubmit="validateLogin(event)"
+        >
+          <div class="tbox">
+            <label for="uname">Username</label>
+            <input id="uname" type="text" placeholder="Username" required />
+          </div>
+          <div class="tbox">
+            <div
+              style="display: flex; justify-content: space-between ; align-items: center;"></div>"
+              <label for="pwd">Password</label>
+              <a
+                class="forgot-link"
+                href="#"
+                style="font-size: 0.75rem; margin-bottom: 6px"
+                >Forgot password?</a
+              >
+            </div>
+            <input id="pwd" type="password" placeholder="Password" required />
+            <div class="password-toggle">
+              <input
+                type="checkbox"
+                id="showPwd"
+                onchange="togglePasswordVisibility()"
+              />
+              <label for="showPwd">Show password</label>
+            </div>
+          </div>
+          <button
+            class="btn btn--primary"
+            type="submit"
+            style="margin-top: 12px"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
 
+      <!-- Create Account Segment View -->
+      <div id="form-signup-container" style="display: none">
+        <h1>Join the journey</h1>
+        <p class="auth-subtitle">Create an account to start exploring</p>
 
-  <div class="container">
+        <form id="register-form" onsubmit="validateRegister(event)">
+          <div class="tbox">
+            <label for="reg-name">Full Name</label>
+            <input id="reg-name" type="text" placeholder="Your Name" required />
+          </div>
+          <div class="tbox">
+            <label for="reg-email">Email Address</label>
+            <input
+              id="reg-email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="tbox">
+            <label for="reg-pwd">Password</label>
+            <input
+              id="reg-pwd"
+              type="password"
+              placeholder="Create Password"
+              required
+            />
+          </div>
+          <button
+            class="btn btn--primary"
+            type="submit"
+            style="margin-top: 12px"
+          >
+            Create Account
+          </button>
+        </form>
+      </div>
+    </div>
 
+    <!-- Intact Alert Modal Block -->
+    <div class="modal">
+      <div class="modal-header">
+        <img
+          src="alert_icon.png"
+          alt=""
+          onerror="this.style.display = 'none'"
+        />
+      </div>
+      <p>Incorrect username or password</p>
+      <button
+        class="btn btn--primary"
+        type="button"
+        onclick="dismissModal()"
+        style="margin-top: 16px"
+      >
+        TRY AGAIN
+      </button>
+    </div>
 
+    <script>
+      function switchAuthTab(type) {
+        const signInBox = document.getElementById("form-signin-container");
+        const signUpBox = document.getElementById("form-signup-container");
+        const tabSignIn = document.getElementById("tab-signin");
+        const tabSignUp = document.getElementById("tab-signup");
 
-    <h1>LOG IN</h1>
+        if (type === "signin") {
+          signInBox.style.display = "block";
+          signUpBox.style.display = "none";
+          tabSignIn.classList.add("active");
+          tabSignUp.classList.remove("active");
+        } else {
+          signInBox.style.display = "none";
+          signUpBox.style.display = "block";
+          tabSignIn.classList.remove("active");
+          tabSignUp.classList.add("active");
+        }
+      }
 
+      function validateLogin(event) {
+        event.preventDefault(); // Stop raw submission reloads
+        var username = document.getElementById("uname").value;
+        var password = document.getElementById("pwd").value;
 
-    <form id="login-form" action="" method="post">
-        <div class="tbox">
-            <input id="uname" type="text" name="" placeholder="Username" value="">
-        </div>
+        if (username === "ExploreZA" && password === "exploreza123") {
+          window.location.href = "index.html";
+        } else {
+          document.querySelector(".modal").style.display = "block";
+        }
+      }
 
-        <div class="tbox">
-            <input id="pwd" type="password" name="" placeholder="Password" value="">
-        </div>
+      function validateRegister(event) {
+        event.preventDefault();
+        window.location.href = "index.html";
+      }
 
-        <input class="btn" type="submit" name="" value="LOG IN" onclick="validateLogin()">
+      function togglePasswordVisibility() {
+        const passwordInput = document.getElementById("pwd");
+        const showPassword = document.getElementById("showPwd").checked;
+        passwordInput.type = showPassword ? "text" : "password";
+      }
 
-    </form>
-
-    <a class="b1" href="#">FORGOT PASSWORD?</a>
-    <a class="b2" href="#">CREATE AN ACCOUNT</a>
-  </div>
-
-  <div class="modal">
-    <div class="modal-header">
-      <img src="alert_icon.png" alt="">
-    </div>
-    <p>Incorrect username or password</p>
-    <button class="btn" type="button" name="button" onclick="dismissModal()">TRY AGAIN</button>
-  </div>
-
-</div>
-
-</body>
-<script>
-  function validateLogin() {
-    event.preventDefault(); // Prevent form submission
-
-    var username = document.getElementById("uname").value;
-    var password = document.getElementById("pwd").value;
-
-    // Check if the username and password are correct
-    if (username === "ExploreZA" && password === "exploreza123") {
-      // Redirect to the home page or perform any other action
-      window.location.href = "index.html";
-    } else {
-      // Show the modal for incorrect login
-      document.querySelector(".modal").style.display = "block";
-    }
-  }
-
-  document.documentElement.setAttribute('data-theme', 'dark');
-
-  function dismissModal() {
-    document.querySelector(".modal").style.display = "none";
-  }
-
-</script>
+      function dismissModal() {
+        document.querySelector(".modal").style.display = "none";
+      }
+    </script>
+  </body>
 </html>

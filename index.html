@@ -4,191 +4,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ExploreZA - Every child deserves to explore</title>
+  <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-  <!-- Sticky Navigation -->
-  <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-20">
-        <div class="flex items-center gap-2">
-          <i class="fa-solid fa-mountain-sun text-2xl text-[#ED8936]"></i>
-          <span class="text-2xl font-bold text-white nav-logo">ExploreZA</span>
-        </div>
-        
-        <!-- Desktop Nav -->
-        <div class="hidden lg:flex items-center gap-8">
-          <a href="#home" class="text-white nav-link font-medium hover:text-[#ED8936] transition">Home</a>
-          <a href="#programmes" class="text-white nav-link font-medium hover:text-[#ED8936] transition">Programmes</a>
-          <a href="#impact" class="text-white nav-link font-medium hover:text-[#ED8936] transition">Impact</a>
-          <a href="#about" class="text-white nav-link font-medium hover:text-[#ED8936] transition">About</a>
-          <a href="#contact" class="text-white nav-link font-medium hover:text-[#ED8936] transition">Contact</a>
-        </div>
-
-        <div class="hidden lg:flex items-center gap-4">
-          <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
-  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="12" cy="12" r="5"></circle>
-    <line x1="12" y1="1" x2="12" y2="3"></line>
-    <line x1="12" y1="21" x2="12" y2="23"></line>
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-    <line x1="1" y1="12" x2="3" y2="12"></line>
-    <line x1="21" y1="12" x2="23" y2="12"></line>
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-  </svg>
-  <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-  </svg>
-</button>
-          <a href="./sign-in.html" class="text-white nav-link font-medium hover:text-[#ED8936] transition">Sign in</a>
-          <button class="btn-primary bg-[#ED8936] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#DD7726]">
-            Donate
-          </button>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="lg:hidden text-white nav-toggle">
-          <i class="fa-solid fa-bars text-2xl"></i>
-        </button>
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo-group">
+        <i class="fa-solid fa-mountain-sun logo-icon"></i>
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M15 9l-2.2 4.8L8 16l2.2-4.8L15 9z" fill="currentColor"/>
+            <circle cx="12" cy="12" r="1.1" fill="var(--bg)"/>
+          </svg>
+        </span>
+        <span class="brand__word">Explore<span class="brand__za">ZA</span></span>
+      </a>
       </div>
+      
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="programmes.html" class="nav-link">Programmes</a>
+        <a href="impact.html" class="nav-link ">Impact</a>
+        <a href="about.html" class="nav-link ">About</a>
+        <a href="contact.html" class="nav-link ">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+          <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="./sign-in.html" class="nav-link ">Sign in</a>
+        <a href="./donate.html" class="btn-primary">
+          Donate
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="mobile-toggle ">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-72 bg-white shadow-2xl lg:hidden">
-      <div class="p-6">
-        <div class="flex justify-between items-center mb-8">
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-mountain-sun text-2xl text-[#ED8936]"></i>
-            <span class="text-xl font-bold text-[#2D2A26]">ExploreZA</span>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <div class="mobile-menu-header">
+          <div class="nav-logo-group">
+            <i class="fa-solid fa-mountain-sun logo-icon"></i>
+            <span class="mobile-logo-text">ExploreZA</span>
           </div>
-          <button id="close-menu" class="text-[#2D2A26]">
-            <i class="fa-solid fa-xmark text-2xl"></i>
+          <button id="close-menu" class="mobile-close">
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
-        <div class="flex flex-col gap-6">
-          <a href="#home" class="text-[#2D2A26] font-medium hover:text-[#ED8936] transition">Home</a>
-          <a href="#programmes" class="text-[#2D2A26] font-medium hover:text-[#ED8936] transition">Programmes</a>
-          <a href="#impact" class="text-[#2D2A26] font-medium hover:text-[#ED8936] transition">Impact</a>
-          <a href="#about" class="text-[#2D2A26] font-medium hover:text-[#ED8936] transition">About</a>
-          <a href="#contact" class="text-[#2D2A26] font-medium hover:text-[#ED8936] transition">Contact</a>
-          <hr class="border-gray-200">
+        <div class="mobile-links">
+          <a href="#home" class="nav__link active">Home</a>
+          <a href="#programmes" class="mobile-link">Programmes</a>
+          <a href="#impact" class="mobile-link">Impact</a>
+          <a href="#about" class="mobile-link">About</a>
+          <a href="#contact" class="mobile-link">Contact</a>
+          <hr class="mobile-divider">
           <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
-  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="12" cy="12" r="5"></circle>
-    <line x1="12" y1="1" x2="12" y2="3"></line>
-    <line x1="12" y1="21" x2="12" y2="23"></line>
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-    <line x1="1" y1="12" x2="3" y2="12"></line>
-    <line x1="21" y1="12" x2="23" y2="12"></line>
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-  </svg>
-  <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-  </svg>
-</button>
-          <a href="./sign-in.html" class="text-left text-[#2D2A26] font-medium">Sign in</a>
-          <button class="btn-primary bg-[#ED8936] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#DD7726]">
-            Donate
+            <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </button>
+          <a href="./sign-in.html" class="mobile-link mobile-signin">Sign in</a>
+          <a href="./donate.html" class="btn-primary mobile-donate">
+            Donate
+          </a>
         </div>
       </div>
     </div>
   </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-      <div class="max-w-3xl animate-fade-up">
-        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          Every child deserves to <span class="text-[#ED8936]">explore</span>
+  
+ 
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        
+        <h1 class="hero-title">
+          Every child deserves to <span class="hero-highlight">explore</span>
         </h1>
-        <p class="text-lg sm:text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl">
-          We give learners from under-resourced schools free adventures across South Africa — from mountain hikes to marine biology days. No child pays a cent.
+        <p class="hero-p">
+          We give learners from under-resourced schools free adventures across Cape Town — from mountain hikes to marine biology days. No child pays a cent.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 mb-16">
-          <button class="btn-primary bg-[#ED8936] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#DD7726] flex items-center justify-center gap-2">
+        <div class="hero-actions">
+          <a href="./donate.html" class="btn-primary btn-large">
             <i class="fa-solid fa-heart"></i>
             Donate Now
-          </button>
-          <button class="btn-secondary bg-white text-[#2D2A26] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 flex items-center justify-center gap-2">
+          </a>
+          <a href="./programmes.html" class="btn-secondary btn-large">
             See Our Programmes
             <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          </a>
         </div>
 
-        <!-- Stats -->
-        <div id="impact" class="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-white/20">
-          <div>
-            <div class="text-4xl sm:text-5xl font-bold text-white mb-2">3,800+</div>
-            <div class="text-gray-300 text-sm sm:text-base">learners taken exploring</div>
+        <div id="impact" class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">3,800+</div>
+            <div class="stat-label">learners taken exploring</div>
           </div>
-          <div>
-            <div class="text-4xl sm:text-5xl font-bold text-white mb-2">120+</div>
-            <div class="text-gray-300 text-sm sm:text-base">partner schools</div>
+          <div class="stat-card">
+            <div class="stat-number">120+</div>
+            <div class="stat-label">partner schools</div>
           </div>
-          <div>
-            <div class="text-4xl sm:text-5xl font-bold text-white mb-2">100%</div>
-            <div class="text-gray-300 text-sm sm:text-base">costs covered for kids</div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">costs covered for kids</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How it Works Section -->
-  <section id="about" class="py-20 sm:py-28 bg-[#FDFBF7]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl sm:text-5xl font-bold text-[#2D2A26] mb-4">How it works</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+  <section id="about" class="info-section">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-subtitle">
           From your donation to their adventure — we make exploration accessible and transparent
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Card 1 -->
-        <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100">
-          <div class="w-14 h-14 bg-[#FEF3E7] rounded-xl flex items-center justify-center mb-6">
-            <i class="fa-solid fa-hand-holding-heart text-2xl text-[#ED8936]"></i>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper bg-orange">
+            <i class="fa-solid fa-hand-holding-heart icon-orange"></i>
           </div>
-          <h3 class="text-xl font-bold text-[#2D2A26] mb-3">You give</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="feature-title">You give</h3>
+          <p class="feature-desc">
             Donate any amount. Every rand goes directly to covering transport, guides, meals, and gear for learners.
           </p>
         </div>
 
-        <!-- Card 2 -->
-        <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100">
-          <div class="w-14 h-14 bg-[#E6F4FE] rounded-xl flex items-center justify-center mb-6">
-            <i class="fa-solid fa-handshake text-2xl text-[#3B82F6]"></i>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper bg-blue">
+            <i class="fa-solid fa-handshake icon-blue"></i>
           </div>
-          <h3 class="text-xl font-bold text-[#2D2A26] mb-3">We partner</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="feature-title">We partner</h3>
+          <p class="feature-desc">
             We work with trusted schools and experienced local guides to plan safe, educational adventures.
           </p>
         </div>
 
-        <!-- Card 3 -->
-        <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100">
-          <div class="w-14 h-14 bg-[#ECFDF5] rounded-xl flex items-center justify-center mb-6">
-            <i class="fa-solid fa-person-hiking text-2xl text-[#10B981]"></i>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper bg-green">
+            <i class="fa-solid fa-person-hiking icon-green"></i>
           </div>
-          <h3 class="text-xl font-bold text-[#2D2A26] mb-3">They explore</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="feature-title">They explore</h3>
+          <p class="feature-desc">
             Learners experience mountains, bush, and coastline — often for the first time — learning through adventure.
           </p>
         </div>
 
-        <!-- Card 4 -->
-        <div class="card-hover bg-white rounded-2xl p-8 border border-gray-100">
-          <div class="w-14 h-14 bg-[#FEF2F2] rounded-xl flex items-center justify-center mb-6">
-            <i class="fa-solid fa-camera text-2xl text-[#EF4444]"></i>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper bg-red">
+            <i class="fa-solid fa-camera icon-red"></i>
           </div>
-          <h3 class="text-xl font-bold text-[#2D2A26] mb-3">We report back</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="feature-title">We report back</h3>
+          <p class="feature-desc">
             You receive photos, stories, and impact updates from every trip you help fund. Full transparency.
           </p>
         </div>
@@ -196,86 +194,82 @@
     </div>
   </section>
 
-  <!-- Programmes Section -->
-  <section id="programmes" class="py-20 sm:py-28 bg-gradient-to-b from-[#F9F6F1] to-[#FDFBF7]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl sm:text-5xl font-bold text-[#2D2A26] mb-4">Programmes we run</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+  <section id="programmes" class="programmes-section">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Programmes we run</h2>
+        <p class="section-subtitle">
           Real adventures that spark curiosity, build confidence, and connect learners to their country
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Programme 1 -->
-        <div class="card-hover bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-          <div class="h-64 overflow-hidden">
-            <img src="./gallery/Home Page/Aquariam.jpg" alt="Aquariam" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+      <div class="programmes-grid">
+        <div class="programme-card">
+          <div class="card-img-wrapper">
+            <img src="https://i.ibb.co/BK3D2435/Aquariam.jpg" alt="Aquariam" border="0">
           </div>
-          <div class="p-8">
-            <div class="flex items-center gap-2 text-[#ED8936] mb-3">
+          <div class="card-content">
+            <div class="location-tag">
               <i class="fa-solid fa-location-dot"></i>
-              <span class="text-sm font-semibold">Cape Town, WC</span>
+              <span>Cape Town, WC</span>
             </div>
-            <h3 class="text-2xl font-bold text-[#2D2A26] mb-3">Two Oceans Aquariam</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <h3 class="programme-name">Two Oceans Aquarium</h3>
+            <p class="programme-desc">
               Learners explore the wonders of the ocean, meet marine biologists, and learn about conservation efforts to protect our seas.
             </p>
-            <div class="flex items-center justify-between gap-4 flex-wrap">
-              <div class="text-sm text-gray-500">
-                <i class="fa-solid fa-users mr-1"></i> 20 learners per trip
+            <div class="card-action-row">
+              <div class="meta-users">
+                <i class="fa-solid fa-users"></i> 20 learners per trip
               </div>
-              <button class="btn-primary bg-[#ED8936] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#DD7726] text-sm">
+              <button class="btn-primary btn-small">
                 Sponsor this trip
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Programme 2 -->
-        <div class="card-hover bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-          <div class="h-64 overflow-hidden">
-            <img src="./gallery/Home Page/Table Mountain Hike.jpg" alt="Table Mountain" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        <div class="programme-card">
+          <div class="card-img-wrapper">
+            <img src="https://i.ibb.co/Z1kBpcZH/Table-Mountain-Hike.jpg" alt="Table-Mountain-Hike" border="0">
           </div>
-          <div class="p-8">
-            <div class="flex items-center gap-2 text-[#ED8936] mb-3">
+          <div class="card-content">
+            <div class="location-tag">
               <i class="fa-solid fa-location-dot"></i>
-              <span class="text-sm font-semibold">Cape Town, WC</span>
+              <span>Cape Town, WC</span>
             </div>
-            <h3 class="text-2xl font-bold text-[#2D2A26] mb-3">Table Mountain Hike</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <h3 class="programme-name">Table Mountain Hike</h3>
+            <p class="programme-desc">
               A guided hike up Table Mountain where learners learn about local flora and fauna, geology, and the importance of conservation.
             </p>
-            <div class="flex items-center justify-between gap-4 flex-wrap">
-              <div class="text-sm text-gray-500">
-                <i class="fa-solid fa-users mr-1"></i> 30 learners per trip
+            <div class="card-action-row">
+              <div class="meta-users">
+                <i class="fa-solid fa-users"></i> 30 learners per trip
               </div>
-              <button class="btn-primary bg-[#ED8936] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#DD7726] text-sm">
+              <button class="btn-primary btn-small">
                 Sponsor this trip
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Programme 3 -->
-        <div class="card-hover bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-          <div class="h-64 overflow-hidden">
-            <img src="./gallery/Home Page/Acrobranch.avif" alt="Acrobranch" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        <div class="programme-card">
+          <div class="card-img-wrapper">
+            <img src="https://i.ibb.co/XrD0wpbp/Acrobranch.avif" alt="Acrobranch" border="0">
           </div>
-          <div class="p-8">
-            <div class="flex items-center gap-2 text-[#ED8936] mb-3">
+          <div class="card-content">
+            <div class="location-tag">
               <i class="fa-solid fa-location-dot"></i>
-              <span class="text-sm font-semibold">Cape Town, WC</span>
+              <span>Cape Town, WC</span>
             </div>
-            <h3 class="text-2xl font-bold text-[#2D2A26] mb-3">Acrobranch Adventure</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <h3 class="programme-name">Acrobranch Adventure</h3>
+            <p class="programme-desc">
               Learners navigate treetop obstacle courses, learning teamwork, problem-solving, and building confidence in a safe outdoor environment.
             </p>
-            <div class="flex items-center justify-between gap-4 flex-wrap">
-              <div class="text-sm text-gray-500">
-                <i class="fa-solid fa-users mr-1"></i> 25 learners per trip
+            <div class="card-action-row">
+              <div class="meta-users">
+                <i class="fa-solid fa-users"></i> 25 learners per trip
               </div>
-              <button class="btn-primary bg-[#ED8936] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#DD7726] text-sm">
+              <button class="btn-primary btn-small">
                 Sponsor this trip
               </button>
             </div>
@@ -285,192 +279,47 @@
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section id="contact" class="py-20 sm:py-28 bg-[#2D2A26]">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6">Ready to give a child their first adventure?</h2>
-      <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+  <section id="contact" class="cta-section">
+    <div class="cta-container">
+      <h2 class="cta-title">Ready to give a child their first adventure?</h2>
+      <p class="cta-desc">
         R350 covers one learner for a full-day programme. R1,200 funds a multi-day hike. Every contribution creates a memory that lasts a lifetime.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button class="btn-primary bg-[#ED8936] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#DD7726] flex items-center justify-center gap-2">
+      <div class="cta-actions">
+        <a href="./donate.html" class="btn-primary btn-large">
           <i class="fa-solid fa-heart"></i>
           Donate Now
-        </button>
-        <button class="btn-secondary bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#2D2A26] flex items-center justify-center gap-2">
+        </a>
+        <a href="donate.html#partner" class="btn-outline btn-large">
           <i class="fa-solid fa-envelope"></i>
           Partner With Us
-        </button>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-[#F6F5F2] py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 mb-12">
-        <!-- Column 1: Logo + Description -->
-        <div class="lg:col-span-1">
-          <div class="flex items-center gap-2 mb-4">
-            <i class="fa-solid fa-mountain-sun text-2xl text-[#ED8936]"></i>
-            <span class="text-2xl font-bold text-[#2D2A26]">ExploreZA</span>
-          </div>
-          <p class="text-gray-600 mb-6 leading-relaxed text-sm">
-            A non-profit giving learners from under-resourced South African schools free adventures to the outdoors
-          </p>
-          <div class="flex gap-3">
-            <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#2D2A26] hover:text-[#ED8936] hover:border-[#ED8936] transition-all duration-200" aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#2D2A26] hover:text-[#ED8936] hover:border-[#ED8936] transition-all duration-200" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#2D2A26] hover:text-[#ED8936] hover:border-[#ED8936] transition-all duration-200" aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Column 2: Explore -->
-        <div>
-          <h4 class="text-xs font-semibold text-[#ED8936] tracking-wider mb-5 uppercase">EXPLORE</h4>
-          <ul class="space-y-3">
-            <li><a href="#home" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Home</a></li>
-            <li><a href="#programmes" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Programmes</a></li>
-            <li><a href="#impact" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Our Impact</a></li>
-            <li><a href="#about" class="text-gray-600 hover:text-[#ED8936] transition text-sm">About Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Get Involved -->
-        <div>
-          <h4 class="text-xs font-semibold text-[#ED8936] tracking-wider mb-5 uppercase">GET INVOLVED</h4>
-          <ul class="space-y-3">
-            <li><a href="#contact" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Donate</a></li>
-            <li><a href="#contact" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Partner with Us</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Volunteer</a></li>
-            <li><a href="#contact" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Legal -->
-        <div>
-          <h4 class="text-xs font-semibold text-[#ED8936] tracking-wider mb-5 uppercase">LEGAL</h4>
-          <ul class="space-y-3">
-            <li><a href="#" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Terms</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-[#ED8936] transition text-sm">Privacy</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-[#ED8936] transition text-sm">NPO Registration</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Bottom Bar -->
-      <div class="border-t border-gray-300 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p class="text-gray-500 text-sm text-center sm:text-left">
-          © 2025 ExploreZA. A registered non-profit NPO. All rights reserved.
-        </p>
-        <p class="text-gray-500 text-sm text-center sm:text-right">
-          Group 4 - Travel & Adventure Platform Project
-        </p>
-      </div>
+  <footer class="footer" id="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="brand"><span class="brand__mark accent">◎</span> <span class="brand__word">Explore<span class="brand__za">ZA</span></span></a>
+      <p>A non-profit giving learners from under-resourced South African schools free access to the outdoors.</p>
     </div>
-  </footer>
-
-  <script>
-    // Sticky nav background change
-    const navbar = document.getElementById('navbar');
-    const navLinks = document.querySelectorAll('.nav-link');
-    const navLogo = document.querySelector('.nav-logo');
-    const navToggle = document.querySelector('.nav-toggle');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('nav-scrolled');
-        navLinks.forEach(link => {
-          link.classList.remove('text-white');
-          link.classList.add('text-[#2D2A26]');
-        });
-        navLogo.classList.remove('text-white');
-        navLogo.classList.add('text-[#2D2A26]');
-        navToggle.classList.remove('text-white');
-        navToggle.classList.add('text-[#2D2A26]');
-      } else {
-        navbar.classList.remove('nav-scrolled');
-        navLinks.forEach(link => {
-          link.classList.remove('text-[#2D2A26]');
-          link.classList.add('text-white');
-        });
-        navLogo.classList.remove('text-[#2D2A26]');
-        navLogo.classList.add('text-white');
-        navToggle.classList.remove('text-[#2D2A26]');
-        navToggle.classList.add('text-white');
-      }
-    });
-
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const closeMenuBtn = document.getElementById('close-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.add('active');
-    });
-
-    closeMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('active');
-    });
-
-    // Close menu when clicking links
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-      });
-    });
-    const themeToggle = document.getElementById('theme-toggle');
-const sunIcon = document.getElementById('sun-icon');
-const moonIcon = document.getElementById('moon-icon');
-const html = document.documentElement;
-
-// Check saved preference or system preference
-const savedTheme = localStorage.getItem('theme') || 
-  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-
-function setTheme(theme) {
-  html.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
-  
-  if (theme === 'dark') {
-    sunIcon.style.display = 'none';
-    moonIcon.style.display = 'block';
-  } else {
-    sunIcon.style.display = 'block';
-    moonIcon.style.display = 'none';
-  }
-}
-
-// Set initial theme
-setTheme(savedTheme);
-
-// Toggle on click
-themeToggle.addEventListener('click', () => {
-  const currentTheme = html.getAttribute('data-theme');
-  setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-});
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-  </script>
-<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
-</body>
-</html>
+    <nav class="footer__col">
+      <span class="footer__head">Explore</span>
+      <a class="footer__link" href="index.html">Home</a>
+      <a class="footer__link" href="programmes.html">Programmes</a>
+      <a class="footer__link" href="impact.html">Our Impact</a>
+      <a class="footer__link" href="about.html">About Us</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__head">Get Involved</span>
+      <a class="footer__link" href="donate.html">Donate</a>
+      <a class="footer__link" href="donate.html#partner">Partner with Us</a>
+      <a class="footer__link" href="contact.html">Volunteer</a>
+      <a class="footer__link" href="contact.html">Contact</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__head">Legal</span>
+      <a class="footer__link" href="terms.html">Terms</a>
+      <a class="footer__link" href="privacy.html">Privacy</a>
+      <a class="footer__link" href="contact.html"
