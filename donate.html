@@ -9,192 +9,211 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="style1.css" />
 </head>
 <body data-active-page="donate">
 <header class="nav" id="topnav">
-  <div class="nav__inner">
-    <a href="index.html" class="brand" aria-label="ExploreZA home">
-      <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
-          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
-          <path d="M15 9l-2.2 4.8L8 16l2.2-4.8L15 9z" fill="currentColor"/>
-          <circle cx="12" cy="12" r="1.1" fill="var(--bg)"/>
-        </svg>
-      </span>
-      <span class="brand__word">Explore<span class="brand__za">ZA</span></span>
-    </a>
-    <nav class="nav__links" aria-label="Primary">
-      <a class="nav__link" data-nav="home" href="index.html">Home</a>
-      <a class="nav__link" data-nav="programmes" href="programmes.html">Programmes</a>
-      <a class="nav__link" data-nav="impact" href="impact.html">Impact</a>
-      <a class="nav__link" data-nav="about" href="about.html">About</a>
-      <a class="nav__link" data-nav="contact" href="contact.html">Contact</a>
-    </nav>
-    <div class="nav__actions">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" title="Switch theme">
-        <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      </button>
-      <a class="nav__signin" href="signin.html">Sign in</a>
-      <a class="btn btn--primary nav__join" href="donate.html">Donate</a>
-      <div class="nav__account" id="navAccount" hidden>
-        <span class="nav__avatar" id="navAvatar">U</span>
-        <span class="nav__hi" id="navHi">Hi</span>
-        <button class="nav__signout" id="navSignout">Sign out</button>
-      </div>
-      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <nav class="nav__mobile" id="navMobile" aria-label="Mobile">
-    <a class="nav__link" href="index.html">Home</a>
-    <a class="nav__link" href="programmes.html">Programmes</a>
-    <a class="nav__link" href="impact.html">Impact</a>
-    <a class="nav__link" href="about.html">About</a>
-    <a class="nav__link" href="contact.html">Contact</a>
-    <a class="nav__link" href="donate.html">Donate</a>
-    <a class="nav__link" href="signin.html">Sign in</a>
-  </nav>
+  <div class="nav__inner">
+    <a href="index.html" class="brand" aria-label="ExploreZA home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M15 9l-2.2 4.8L8 16l2.2-4.8L15 9z" fill="currentColor"/>
+          <circle cx="12" cy="12" r="1.1" fill="var(--bg)"/>
+        </svg>
+      </span>
+      <span class="brand__word">Explore<span class="brand__za">ZA</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" data-nav="home" href="index.html">Home</a>
+      <a class="nav__link" data-nav="programmes" href="programmes.html">Programmes</a>
+      <a class="nav__link" data-nav="impact" href="impact.html">Impact</a>
+      <a class="nav__link" data-nav="about" href="about.html">About</a>
+      <a class="nav__link" data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" title="Switch theme">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="nav__signin" href="signin.html">Sign in</a>
+      <a class="btn btn--primary nav__join" href="donate.html">Donate</a>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav__mobile" id="navMobile" aria-label="Mobile">
+    <a class="nav__link" href="index.html">Home</a>
+    <a class="nav__link" href="programmes.html">Programmes</a>
+    <a class="nav__link" href="impact.html">Impact</a>
+    <a class="nav__link" href="about.html">About</a>
+    <a class="nav__link" href="contact.html">Contact</a>
+    <a class="nav__link" href="donate.html">Donate</a>
+    <a class="nav__link" href="signin.html">Sign in</a>
+  </nav>
 </header>
+
 <main id="main">
+  <div class="container section">
+    <div class="section__head center">
+      <span class="eyebrow">Make a difference</span>
+      <h1 class="display-xl">Send a child on an <span class="accent">adventure</span></h1>
+      <p class="section__sub">100% of your donation goes toward getting learners outdoors. Choose an amount below — give once or monthly.</p>
+    </div>
 
-  <div class="container section">
-    <div class="section__head center">
-      <span class="eyebrow">Make a difference</span>
-      <h1 class="display-xl">Send a child on an <span class="accent">adventure</span></h1>
-      <p class="section__sub">100% of your donation goes toward getting learners outdoors. Choose an amount below — give once or monthly.</p>
-    </div>
+    <div class="donate">
+      <form class="donate__form card" id="donateForm" novalidate>
+        <div class="donate__freq" id="donateFreq">
+          <button type="button" class="freq freq--active" data-freq="once">Give once</button>
+          <button type="button" class="freq" data-freq="monthly">Give monthly</button>
+        </div>
 
-    <div class="donate">
-      <form class="donate__form card" id="donateForm" novalidate>
-        <div class="donate__freq" id="donateFreq">
-          <button type="button" class="freq freq--active" data-freq="once">Give once</button>
-          <button type="button" class="freq" data-freq="monthly">Give monthly</button>
-        </div>
+        <span class="mono-label">Choose an amount (ZAR)</span>
+        <div class="tiers" id="tiers">
+          <button type="button" class="tier" data-amount="75"><strong>R75</strong><em>A meal &amp; transport for one learner</em></button>
+          <button type="button" class="tier tier--active" data-amount="150"><strong>R150</strong><em>A full day adventure for one learner</em></button>
+          <button type="button" class="tier" data-amount="500"><strong>R500</strong><em>Outdoor &amp; safety gear for a small group</em></button>
+          <button type="button" class="tier" data-amount="2500"><strong>R2 500</strong><em>Sponsor a whole class day-trip</em></button>
+        </div>
 
-        <span class="mono-label">Choose an amount (ZAR)</span>
-        <div class="tiers" id="tiers">
-          <button type="button" class="tier" data-amount="75"><strong>R75</strong><em>A meal &amp; transport for one learner</em></button>
-          <button type="button" class="tier tier--active" data-amount="150"><strong>R150</strong><em>A full day adventure for one learner</em></button>
-          <button type="button" class="tier" data-amount="500"><strong>R500</strong><em>Outdoor &amp; safety gear for a small group</em></button>
-          <button type="button" class="tier" data-amount="2500"><strong>R2 500</strong><em>Sponsor a whole class day-trip</em></button>
-        </div>
+        <div class="field">
+          <label for="customAmt">Or enter your own amount</label>
+          <div class="amount-input">
+            <span>R</span>
+            <input id="customAmt" type="number" min="10" inputmode="numeric" placeholder="150" />
+          </div>
+        </div>
 
-        <div class="field">
-          <label for="customAmt">Or enter your own amount</label>
-          <div class="amount-input">
-            <span>R</span>
-            <input id="customAmt" type="number" min="10" inputmode="numeric" placeholder="150" />
-          </div>
-        </div>
+        <div class="field-row">
+          <div class="field"><label for="dName">Full name</label><input id="dName" type="text" placeholder="Thabo Nkosi" required /></div>
+          <div class="field"><label for="dEmail">Email</label><input id="dEmail" type="email" placeholder="you@email.com" required /></div>
+        </div>
 
-        <div class="field-row">
-          <div class="field"><label for="dName">Full name</label><input id="dName" type="text" placeholder="Thabo Nkosi" required /></div>
-          <div class="field"><label for="dEmail">Email</label><input id="dEmail" type="email" placeholder="you@email.com" required /></div>
-        </div>
+        <button type="submit" class="btn btn--primary btn--block btn--lg" id="donateBtn">Donate R150</button>
+        <p class="donate__note">This is a class project — no real payment is taken.</p>
+        <p class="form__success" id="donateSuccess" hidden></p>
+      </form>
 
-        <button type="submit" class="btn btn--primary btn--block btn--lg" id="donateBtn">Donate R150</button>
-        <p class="donate__note">This is a class project — no real payment is taken.</p>
-        <p class="form__success" id="donateSuccess" hidden></p>
-      </form>
+      <aside class="donate__aside">
+        <div class="card impact-card">
+          <h3>Your impact</h3>
+          <p id="impactLine">R150 funds a full day adventure for <strong>1 learner</strong>.</p>
+          <div class="impact-bar"><span id="impactFill"></span></div>
+          <ul class="ticklist ticklist--tight">
+            <li>Transport from their school</li>
+            <li>A meal for the day</li>
+            <li>Guides, safety &amp; gear</li>
+          </ul>
+        </div>
+        <div class="card give-ways">
+          <h3>Other ways to give</h3>
+          <p>EFT, payroll giving, or in-kind donations of gear and transport are all welcome.</p>
+          <button class="btn btn--ghost btn--block" data-page="contact">Get banking details</button>
+        </div>
+      </aside>
+    </div>
+  </div>
 
-      <aside class="donate__aside">
-        <div class="card impact-card">
-          <h3>Your impact</h3>
-          <p id="impactLine">R150 funds a full day adventure for <strong>1 learner</strong>.</p>
-          <div class="impact-bar"><span id="impactFill"></span></div>
-          <ul class="ticklist ticklist--tight">
-            <li>Transport from their school</li>
-            <li>A meal for the day</li>
-            <li>Guides, safety &amp; gear</li>
-          </ul>
-        </div>
-        <div class="card give-ways">
-          <h3>Other ways to give</h3>
-          <p>EFT, payroll giving, or in-kind donations of gear and transport are all welcome.</p>
-          <button class="btn btn--ghost btn--block" data-page="contact">Get banking details</button>
-        </div>
-      </aside>
-    </div>
-  </div>
-
-  <div class="container section" id="partner">
-    <div class="partner">
-      <div class="partner__text">
-        <span class="eyebrow">For companies &amp; funders</span>
-        <h2 class="display-lg">Partner your business with ExploreZA</h2>
-        <p>Fund adventures at scale and create measurable social impact for your company.</p>
-        <ul class="ticklist">
-          <li>Qualifies as B-BBEE socio-economic development spend</li>
-          <li>Branded impact reports &amp; photography for your CSR</li>
-          <li>Reach thousands of young South Africans and their schools</li>
-          <li>Employee volunteering days on real trips</li>
-        </ul>
-      </div>
-      <form class="partner__form card" id="partnerForm" novalidate>
-        <h3>Enquire about partnering</h3>
-        <div class="field"><label for="pCompany">Company name</label><input id="pCompany" type="text" placeholder="Acme (Pty) Ltd" required /></div>
-        <div class="field-row">
-          <div class="field"><label for="pName">Contact person</label><input id="pName" type="text" placeholder="Your name" required /></div>
-          <div class="field"><label for="pEmail">Work email</label><input id="pEmail" type="email" placeholder="you@company.co.za" required /></div>
-        </div>
-        <div class="field"><label for="pBudget">Approximate budget (optional)</label>
-          <select id="pBudget">
-            <option>Under R25,000</option>
-            <option>R25,000 – R100,000</option>
-            <option>R100,000 – R500,000</option>
-            <option>R500,000+</option>
-          </select>
-        </div>
-        <div class="field"><label for="pMsg">Message</label><textarea id="pMsg" rows="3" placeholder="Tell us about your CSI goals…"></textarea></div>
-        <button type="submit" class="btn btn--primary btn--block btn--lg">Send Enquiry</button>
-        <p class="form__success" id="partnerSuccess" hidden>✓ Thank you — our partnerships team will be in touch.</p>
-      </form>
-    </div>
-  </div>
-
+  <div class="container section" id="partner">
+    <div class="partner">
+      <div class="partner__text">
+        <span class="eyebrow">For companies &amp; funders</span>
+        <h2 class="display-lg">Partner your business with ExploreZA</h2>
+        <p>Fund adventures at scale and create measurable social impact for your company.</p>
+        <ul class="ticklist">
+          <li>Qualifies as B-BBEE socio-economic development spend</li>
+          <li>Branded impact reports &amp; photography for your CSR</li>
+          <li>Reach thousands of young South Africans and their schools</li>
+          <li>Employee volunteering days on real trips</li>
+        </ul>
+      </div>
+      <form class="partner__form card" id="partnerForm" novalidate>
+        <h3>Enquire about partnering</h3>
+        <div class="field"><label for="pCompany">Company name</label><input id="pCompany" type="text" placeholder="Acme (Pty) Ltd" required /></div>
+        <div class="field-row">
+          <div class="field"><label for="pName">Contact person</label><input id="pName" type="text" placeholder="Your name" required /></div>
+          <div class="field"><label for="pEmail">Work email</label><input id="pEmail" type="email" placeholder="you@company.co.za" required /></div>
+        </div>
+        <div class="field"><label for="pBudget">Approximate budget (optional)</label>
+          <select id="pBudget">
+            <option>Under R25,000</option>
+            <option>R25,000 – R100,000</option>
+            <option>R100,000 – R500,000</option>
+            <option>R500,000+</option>
+          </select>
+        </div>
+        <div class="field"><label for="pMsg">Message</label><textarea id="pMsg" rows="3" placeholder="Tell us about your CSI goals…"></textarea></div>
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Send Enquiry</button>
+        <p class="form__success" id="partnerSuccess" hidden>✓ Thank you — our partnerships team will be in touch.</p>
+      </form>
+    </div>
+  </div>
 </main>
 
 <footer class="footer" id="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a href="index.html" class="brand"><span class="brand__mark accent">◎</span> <span class="brand__word">Explore<span class="brand__za">ZA</span></span></a>
-      <p>A non-profit giving learners from under-resourced South African schools free access to the outdoors.</p>
-      <div class="footer__social">
-        <button aria-label="Instagram" data-social="Instagram">⌾</button>
-        <button aria-label="X" data-social="X">𝕏</button>
-        <button aria-label="Facebook" data-social="Facebook">f</button>
-        <button aria-label="YouTube" data-social="YouTube">▷</button>
-      </div>
-    </div>
-    <nav class="footer__col">
-      <span class="footer__head">Explore</span>
-      <a class="footer__link" href="index.html">Home</a>
-      <a class="footer__link" href="programmes.html">Programmes</a>
-      <a class="footer__link" href="impact.html">Our Impact</a>
-      <a class="footer__link" href="about.html">About Us</a>
-    </nav>
-    <nav class="footer__col">
-      <span class="footer__head">Get Involved</span>
-      <a class="footer__link" href="donate.html">Donate</a>
-      <a class="footer__link" href="donate.html#partner">Partner with Us</a>
-      <a class="footer__link" href="contact.html">Volunteer</a>
-      <a class="footer__link" href="contact.html">Contact</a>
-    </nav>
-    <nav class="footer__col">
-      <span class="footer__head">Legal</span>
-      <a class="footer__link" href="terms.html">Terms</a>
-      <a class="footer__link" href="privacy.html">Privacy</a>
-      <a class="footer__link" href="contact.html">NPO Registration</a>
-    </nav>
-  </div>
-  <div class="container footer__bottom">
-    <span>:copyright: 2025 ExploreZA. A registered non-profit (NPO). All rights reserved.</span>
-    <span>Group 4 — Travel &amp; Adventure Platform Project</span>
-  </div>
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="brand"><span class="brand__mark accent">◎</span> <span class="brand__word">Explore<span class="brand__za">ZA</span></span></a>
+      <p>A non-profit giving learners from under-resourced South African schools free access to the outdoors.</p>
+    </div>
+    <nav class="footer__col">
+      <span class="footer__head">Explore</span>
+      <a class="footer__link" href="index.html">Home</a>
+      <a class="footer__link" href="programmes.html">Programmes</a>
+      <a class="footer__link" href="impact.html">Our Impact</a>
+      <a class="footer__link" href="about.html">About Us</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__head">Get Involved</span>
+      <a class="footer__link" href="donate.html">Donate</a>
+      <a class="footer__link" href="donate.html#partner">Partner with Us</a>
+      <a class="footer__link" href="contact.html">Volunteer</a>
+      <a class="footer__link" href="contact.html">Contact</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__head">Legal</span>
+      <a class="footer__link" href="terms.html">Terms</a>
+      <a class="footer__link" href="privacy.html">Privacy</a>
+      <a class="footer__link" href="contact.html">NPO Registration</a>
+    </nav>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2025 ExploreZA. A registered non-profit (NPO). All rights reserved.</span>
+    <span>Group 4 — Travel &amp; Adventure Platform Project</span>
+  </div>
 </footer>
 
 <div class="toast" id="toast" hidden></div>
-<script src="script.js"></script>
-</body>
-</html>
+<script>
+// light and dark mode
+const themeToggles = document.querySelectorAll('#themeToggle, #theme-toggle');
+const html = document.documentElement;
+
+// Get saved theme or system preference
+const savedTheme = localStorage.getItem('exploreza-theme') ||
+(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+function setTheme(theme) {
+html.setAttribute('data-theme', theme);
+localStorage.setItem('exploreza-theme', theme);
+
+// Update all sun/moon icons on page
+document.querySelectorAll('.theme-toggle__sun, #sun-icon').forEach(icon => {
+icon.style.display = theme === 'dark' ? 'none' : 'block';
+});
+document.querySelectorAll('.theme-toggle__moon, #moon-icon').forEach(icon => {
+icon.style.display = theme === 'dark' ? 'block' : 'none';
+});
+}
+
+// Set initial theme on load
+setTheme(savedTheme);
+
+// Add click listener to ALL toggle buttons
+themeToggles.forEach(toggle => {
+toggle.addEventListener('click', () => {
+const currentTheme = html.getAttribute('data-theme');
+setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+});
+});
+
+//mobile menu toggle
